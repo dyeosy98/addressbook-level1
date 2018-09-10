@@ -232,8 +232,9 @@ public class AddressBook {
     }
     
     private static void askForPassword() {
-        String password=c.readLine("Enter password: ");
-        System.out.print("Access to address book successful.\n")
+        System.out.print("Enter password: ");
+        String password=SCANNER.nextLine();
+        System.out.print("Access to address book successful.\n");
     }
 
     private static void showResultToUser(String result) {
