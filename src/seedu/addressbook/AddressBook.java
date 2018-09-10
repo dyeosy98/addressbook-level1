@@ -208,6 +208,7 @@ public class AddressBook {
 
     public static void main(String[] args) {
         showWelcomeMessage();
+        askForPassword();
         processProgramArgs(args);
         loadDataFromStorage();
         while (true) {
@@ -228,6 +229,11 @@ public class AddressBook {
 
     private static void showWelcomeMessage() {
         showToUser(DIVIDER, DIVIDER, VERSION, MESSAGE_WELCOME, DIVIDER);
+    }
+    
+    private static void askForPassword() {
+        String password=c.readLine("Enter password: ");
+        System.out.print("Access to address book successful.\n")
     }
 
     private static void showResultToUser(String result) {
